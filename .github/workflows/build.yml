@@ -5,6 +5,8 @@ name: Build
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: zmkfirmware/zephyr-west-action-arm:latest
     name: Build
     steps:
       - name: Checkout
