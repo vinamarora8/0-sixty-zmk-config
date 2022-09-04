@@ -5,8 +5,6 @@ name: Build
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: zmkfirmware/zmk-build-arm:2.5
     name: Build
     steps:
       - name: Checkout
