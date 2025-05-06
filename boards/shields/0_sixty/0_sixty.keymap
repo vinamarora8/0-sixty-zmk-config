@@ -11,6 +11,10 @@
 #define RAISE 1
 #define NUM 2
 
+&lt {
+    quick-tap-ms = <150>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
