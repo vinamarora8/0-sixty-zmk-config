@@ -12,7 +12,7 @@
 #define NUM 2
 
 &mt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <150>;
 };
 
