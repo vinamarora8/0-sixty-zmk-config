@@ -3,8 +3,7 @@ id: hummingbird
 name: Hummingbird
 type: shield
 url: https://github.com/PJE66/hummingbird
-#requires: [seeed_xiao]
-requires: [pro_micro]
+requires: [seeed_xiao]
 features:
   - keys
   - studio
