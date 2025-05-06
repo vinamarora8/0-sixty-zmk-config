@@ -3,8 +3,8 @@
 # shield: [ "0_sixty" ]
 
 include:
- - board: nice_nano_v2
-   shield: 0_sixty
+ - board: seeeduino_xiao
+   shield: hummingbird
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_STUDIO=y
 
