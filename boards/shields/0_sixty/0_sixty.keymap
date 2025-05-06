@@ -9,6 +9,7 @@
 
 #define DEFAULT 0
 #define RAISE 1
+#define NUM 2
 
 / {
     keymap {
@@ -16,11 +17,11 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6  &kp N7    &kp   N8  &kp  N9  &kp  N0  &kp BSPC
-&kp TAB    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y   &kp U     &kp   I   &kp  O   &kp   P  &kp RET
-&kp LCTL   &kp A    &kp S    &kp D    &kp F    &kp G    &kp H   &kp J     &kp   K   &kp  L   &kp SEMI &kp RCTL
-&kp LSHFT  &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N   &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-&kp LCTL   &mo LCTL &kp LALT &kp LCMD &mo RAISE    &kp SPACE    &mo RAISE &kp RCMD  &kp RALT &mo RCTL &kp RCTL
+&kp ESC    &kp N1   &kp N2   &kp N3   &kp N4     &kp N5   &kp N6    &kp N7    &kp   N8  &kp  N9  &kp  N0  &kp BSPC
+&kp TAB    &kp Q    &kp W    &kp E    &kp R      &kp T    &kp Y     &kp U     &kp   I   &kp  O   &kp   P  &kp RET
+&kp LCTL   &kp A    &kp S    &kp D    &kp F      &kp G    &kp H     &kp J     &kp   K   &kp  L   &kp SEMI &kp RCTL
+&kp LSHFT  &kp Z    &kp X    &kp C    &kp V      &kp B    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+&none      &mo NUM  &kp LALT &kp LCMD &mo RAISE           &kp SPACE &mo RAISE &kp RCMD  &kp RALT &mo RCTL &none
             >;
         };
 
@@ -30,8 +31,20 @@
 &studio_unlock &kp LBKT   &kp LT        &kp GT        &kp RBKT   &kp TILDE  &kp PIPE   &kp GRAVE  &kp APOS   &kp DQT    &kp PG_UP  &kp BSPC
 &kp ESC        &kp LBRC   &kp LPAR      &kp RPAR      &kp RBRC   &kp DEL    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp PG_DN  &kp BSPC
 &trans         &trans     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP   &trans     &kp EQUAL  &kp UNDER  &kp MINUS  &kp PLUS   &kp BSLH   &trans
-&trans         &trans     &trans        &trans        &trans         &kp CAPS          &trans     &trans     &trans     &trans     &trans
+&trans         &trans     &trans        &trans        &trans                &kp CAPS   &trans     &trans     &trans     &trans     &trans
             >;
         };
+
+        numbers_layer {
+            bindings = <
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &kp N7 &kp N8 &kp N9 &kp N0 &trans
+&trans &trans &trans &trans &trans &trans &trans &kp N4 &kp N5 &kp N6 &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &kp N1 &kp N2 &kp N3 &trans &trans
+&trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+            >;
+
+        };
+
     };
 };
